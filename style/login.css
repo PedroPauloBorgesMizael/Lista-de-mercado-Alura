@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Numans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #F55B64;
+    --cor-secundaria: #C2373F;
+    --neutro: #F9F9F9;
+    --preto: #131730;
+    --fonte-titulo: "Krona One", sans-serif;
+    --fonte-texto: 'Numans', sans-serif;
+    --degrade-azul: linear-gradient(180deg, #000000 0%, #26327F 100%);
+}
+
+body {
+    background: var(--degrade-azul);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    width: 420px;
+    color: var(--preto);
+    border-radius: 12px;
+    padding: 1.8em 2.4em;
+    border-radius: 12px;
+    padding: 30px 40px;
+    background: var(--neutro);
+}
+
+.login h1 {
+    font-size: 36;
+    text-align: center;
+}
+
+.login .usuario_senha {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.usuario_senha input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid var(--preto);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--preto);
+    padding: 20px 45px 20px 20px;
+}
+
+.usuario_senha input::placeholder {
+    color: var(--preto);
+}
+
+.usuario_senha i {
+    position: absolute;
+    right: 20px;
+    top:30%;
+    transform: translate(-50%);
+    font-size: 20px;
+
+}
+
+.login .botao {
+    width: 100%;
+    height: 45px;
+    background: var(--cor-primaria);
+    opacity: 1;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--neutro);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutro);
+    width: 100%;
+}
